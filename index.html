@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+<style>
+
+      body {
+        margin: 0;
+        font-family: 'Quicksand';
+           }
+
+           ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             width: 4%;
+             background-color: #152238;
+             position: fixed;
+             height: 100%;
+             overflow: auto;
+              }
+
+              li a {
+                display: block;
+                color: white;
+                padding: 15px 0px;
+                text-decoration: none;
+                font-size: 20px;
+                text-align: center;
+
+                   }
+
+                   li a.active {
+                     background-color: #23395D;
+                     color: white;
+                               }
+
+                               li a:hover:not(.active) {
+                                 background-color: #000B18;
+                                 color: white;
+                                    }
+
+
+      .header {
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              }
+
+      .hero-image {
+        background-image: url("main pic.jpg");
+        height: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+
+        h1 {
+          color: #152238;
+          font-size: 70px;
+          font-family: 'Alata';
+          text-align: left;
+          }
+
+        h4 {
+          color: #FFFFFF;
+          text-align: left;
+          font-size: 15px;
+          font-family: 'Alata';
+        }
+
+        * {
+            box-sizing: border-box;
+          }
+
+          .columnhead {
+            float: left;
+            width: 40%;
+            padding-left: 15px;
+                  }
+
+          .columntext {
+            float: left;
+            width: 60%;
+            padding-top: 50px;
+            text-align: justify;
+                  }
+
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+                  }
+
+          .button {
+          background-color: #152238;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+                }
+
+        button:hover {
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            th {
+              padding: 8px;
+              text-align: left;
+              border-bottom: 1px solid #ddd;
+              background-color:#f5f5f5;
+            }
+
+            td {
+              padding: 8px;
+              text-align: left;
+              border-bottom: 1px solid #ddd;
+            }
+
+            tr:hover {background-color:#f5f5f5;}
+
+            div.sticky {
+              position: -webkit-sticky;
+              position: sticky;
+              bottom: 0;
+              text-align: right;
+                      }
+
+            .imgrow {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+
+          .imgcolumn {
+            flex: 33%;
+            max-width: 33%;
+            padding: 0 4px;
+          }
+
+          .imgcolumn img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+
+          @media screen and (max-width: 800px) {
+            .imgcolumn {
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            .imgcolumn {
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
+
+            .tab {
+              overflow: hidden;
+              border: 1px solid #ccc;
+            }
+
+            .tab button {
+              background-color: inherit;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              transition: 0.3s;
+              font-size: 17px;
+            }
+
+            .tab button:hover {
+              background-color: #000B18;
+              color: white;
+            }
+
+            .tab button.active {
+              background-color: #152238;
+              color: #FFFFFF;
+            }
+
+            .tabcontent {
+              display: none;
+              padding: 6px 12px;
+              border: 1px solid #ccc;
+              border-top: none;
+            }
+
+            footer {
+              text-align: center;
+              padding: 3px;
+              background-color: DarkSalmon;
+              color: white;
+            }
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<ul>
+  <li><a href="#about"><i class="fa fa-home"></i></a></li>
+  <li><a href="#photos"><i class="fa fa-photo"></i></a></li>
+  <li><a href="#concerts"><i class="fa fa-paper-plane"></i></a></li>
+  <li><a href="#music"><i class="fa fa-music"></i></a></li>
+</ul>
+
+  <div style="margin-left:4%; height:900px">
+
+      <div class="hero-image"></div>
+
+        <div style="margin-left:7%; margin-right:7%; margin-top:2%; padding:1px 16px; height:1000px;">
+
+
+          <div class="row">
+
+            <div class="columnhead">
+              <h1 id="about">about</h1>
+            </div>
+
+            <div class="columntext">
+              <p>Jack Johnson's big break was writing and contributing vocals for the song "Rodeo Clowns" which was featured on G. Love's 1999 album Philadelphonic. The song would later become the most famous single on the album. Johnson was introduced to G. Love by a mutual friend of who Johnson was shooting surf films with at the time. After hearing "Rodeo Clowns", G. Love saw Johnson's potential and effortless style and invited him to record with him. That led to the now-famous "Rodeo Clowns" recording, launching Johnson's career.<br><br>
+              In addition to his later success as a musician, Johnson is also an accomplished filmmaker. Johnson directed the surf films Thicker Than Water (2000) and The September Sessions (2002), in which he also starred. Both movie soundtracks were also products of Johnson. Johnson also starred in the 2004 surf film A Brokedown Melody.
+              Suela released a four track demo that caught the attention of Ben Harper's producer, J. P. Plunier, who worked with Johnson to produce his debut album Brushfire Fairytales during December 2000 with Harper and his Weissenborn lap steel guitar making a guest appearance. Brushfire Fairytales was released on February 1, 2001, and led to Johnson becoming the opening act in late February 2001 for the last twenty-three cities of Ben Harper's "Innocent Criminals" tour of the United States.
+              <br><br><a href="https://jackjohnsonmusic.com" target="_blank"><button class="button" align="right";>Read More</button></a>
+            </div>
+          </div>
+
+
+          <h1 id="photos">gallery</h1>
+
+          <div class="tab">
+            <button class="tablinks" onclick="openPage(event, 'Aloha Stadium')">Aloha Stadium</button>
+            <button class="tablinks" onclick="openPage(event, 'Sea Here Now')">Sea Here Now</button>
+            <button class="tablinks" onclick="openPage(event, 'Zidadel')">Zidadel</button>
+          </div>
+
+          <div id="Aloha Stadium" class="tabcontent">
+            <div class="imgrow">
+                <div class="imgcolumn">
+                  <img src="img1.jpg" style="width:100%">
+                  <img src="img2.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img5.jpg" style="width:100%">
+                  <img src="img7.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img3.jpg" style="width:100%">
+                  <img src="img4.jpg" style="width:100%">
+                </div>
+            </div>
+          </div>
+
+          <div id="Sea Here Now" class="tabcontent">
+            <div class="imgrow">
+                <div class="imgcolumn">
+                  <img src="img8.jpg" style="width:100%">
+                  <img src="img9.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img10.jpg" style="width:100%">
+                  <img src="img11.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img12.jpg" style="width:100%">
+                  <img src="img13.jpg" style="width:100%">
+                </div>
+            </div>
+          </div>
+
+          <div id="Zidadel" class="tabcontent">
+            <div class="imgrow">
+                <div class="imgcolumn">
+                  <img src="img14.jpg" style="width:100%">
+                  <img src="img15.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img16.jpg" style="width:100%">
+                  <img src="img17.jpg" style="width:100%">
+                </div>
+                <div class="imgcolumn">
+                  <img src="img18.jpg" style="width:100%">
+                  <img src="img19.jpg" style="width:100%">
+                </div>
+            </div>
+          </div>
+
+
+          <h1 id="concerts">upcoming shows</h1>
+          <table>
+            <tr>
+              <th><h3>See you on</h3></th>
+              <th><h3>At</h3></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td><b>10 July</b><br>2021</td>
+              <td><b>LEVITATE MUSIC FESTIVAL</b><br>Marshfield Massachusetts</td>
+              <td><a href="https://www.levitatemusicfestival.com" target="_blank"><button class="button" align="right";>Book Now</button></a></td>
+            </tr>
+            <tr>
+              <td><b>14 July</b><br>2021</td>
+              <td><b>RBC BLUEFEST</b><br>Ottawa, Canada</td>
+              <td><a href="https://ottawabluesfest.ca" target="_blank"><button class="button" align="right";>Book Now</button></a></td>
+            </tr>
+          </table>
+
+          <h1 align="right" id="music">music</h1>
+
+          <iframe id="ytplayer" type="text/html" width="100%" height="405"
+src="https://www.youtube.com/embed/videoseries?list=PLX_2fEAbsLV2dCxek5PGii2CZwfqoaaMc"
+frameborder="0" allowfullscreen>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLX_2fEAbsLV2dCxek5PGii2CZwfqoaaMc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="sticky">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXe1eE6Gj3EKS" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" autoplay;></iframe>
+          </div>
+
+          <footer>
+            <p>Built by Rachit Mathur<br>
+            *No content in this website is mine. And is take from different resources*</p>
+          </footer>
+
+    </div>
+
+  </div>
+
+
+  <script>
+  function openPage(evt, venueName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(venueName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+
+</body>
+</html>
